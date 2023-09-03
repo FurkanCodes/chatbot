@@ -15,7 +15,7 @@ function add(a, b) {
     if (b != "0") {
       return parseFloat(a) / parseFloat(b);
     } else {
-      return "I am afraid you cannot divide by 0";
+      return "Korkarım ki 0 ile bölemezsin";
     }
   }
   
