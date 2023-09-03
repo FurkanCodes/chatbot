@@ -1,0 +1,138 @@
+:root {
+    --darkblue: #070214;
+    --ligtherblue: hsl(243, 57%, 50%);
+    --display: #f6f2df;
+    --grey--50: #7b6c6c;
+    --yellowgreen: #9FCC2E;
+    --ebony: #5A6650;
+    --huntergreen: #295135;
+    --sacramento: #0E402D;
+    --black: #000000;
+  }
+
+html {
+    font-size: 150%;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4;
+  }
+  
+  body {
+    display: flex;
+    background-image: linear-gradient(236deg, #9FCC2E, #5A6650);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.headline h1{
+text-align:center;
+  font-size: 50px;
+  letter-spacing: 6px;
+  word-spacing: 6px;
+  color: var(--sacramento);
+  font-weight: 700;
+
+font-style: normal;
+font-variant: small-caps;
+transition: text-shadow 0.1s  ease;
+
+}
+.headline:hover {
+  text-shadow: 11px 10px 9px rgba(0,0,0,0.54);
+  cursor: default;
+}
+.headline {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 11px;
+}
+.calculator {
+  -webkit-box-shadow: 15px 5px 0px 0px black; 
+  box-shadow: 15px 5px 0px 0px black;
+ width: 350px;
+ border-radius: 10px;
+ overflow: hidden;
+}
+
+ .calc_display {
+     background-color: var(--display);
+     color: var(--grey--50);
+     
+     padding: 0.5rem 0.75rem 0.50rem;
+     text-align: right;
+     font-size: calc(1rem * 1.2 * 1.2 * 1.2); /* font scale */
+ }
+
+ .calc_keys {
+  background-color: var(--sacramento);
+   display: grid;
+   grid-gap: 1px;
+   grid-template-columns:repeat(4, 1fr);
+   grid-template-areas: 
+   ". . . ."
+   "one two three equal"
+   "four five six equal"
+   "seven eight nine equal"
+   "zero decimal clear equal";
+
+
+ }
+.one {
+  grid-area: one;
+}.two {
+  grid-area: two;
+}.three {
+  grid-area: three;
+}.four {
+  grid-area: four;
+}.five {
+  grid-area: five;
+}.six {
+  grid-area: six;
+}.seven {
+  grid-area: seven;
+}.eight {
+  grid-area: eight;
+}.nine {
+  grid-area: nine;
+}.decimal {
+  grid-area: decimal;
+}.clear {
+  grid-area: clear;
+}.zero {
+  grid-area: zero;
+}.equal {
+  grid-area: equal;
+ background-color: rgb(186, 156, 25);
+}
+
+
+.operator {
+  background-color: rgb(186, 156, 25);
+}
+.operator:hover
+ {
+  background-color: #74935d;
+ 
+}
+.equal:hover
+ {
+  background-color: #74935d;
+}
+
+.number:hover {
+  background-color: #74935d;
+
+}
+
+.clear:hover
+{
+  background-color: #74935d;
+}
+.calc_keys  > button {
+  border: 0;
+   padding:25px 10px 25px 10px; 
+ }
